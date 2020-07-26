@@ -1,0 +1,199 @@
+.rotate-vert-center {
+	-webkit-animation: rotate-vert-center 3s linear infinite ;
+	        animation: rotate-vert-center 3s linear infinite ;
+}
+
+html {
+  background: linear-gradient(pink, blue) no-repeat center center fixed;
+  background-size: cover;
+  padding: 50px;
+}
+
+/* Gallery stuff */
+
+div.gallery {
+  border: none;
+}
+
+div.gallery:hover {
+  background-color: white;
+}
+
+div.gallery img {
+/*  width: auto;*/
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 10px 10px;
+  float: left;
+  object-fit: cover;
+  width: 24.99999%;
+/*  object-fit: contain;*/
+}
+
+@media only screen and (max-width: 900px) {
+  .responsive {
+  	padding: 10px 10px;
+    width: 49.99999%;
+    /*margin: 6px 0;*/
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+  	object-fit: cover;
+  	padding: 10px 10px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+*/
+
+/* nav bar stuff */
+
+ul.topnav {
+  font-family: Arial;
+  float: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: none;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {color: black; background-color: white;}
+
+ul.topnav li a.active {background-color: yellow; color: black;}
+
+ul.topnav li.right {float: right;}
+
+/* change nav bar from horizontal to vertical when screen width below 600px */
+/*@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}*/
+
+
+/* Applies to the entire body of the HTML document (except where overridden by more specific
+selectors). */
+body {
+ /* background-repeat: no-repeat;*/
+  margin: 25px;
+  /*background-color: rgb(240,240,240);*/
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 100%;
+}
+
+/* Applies to all <h1>...</h1> elements. */
+h1 {
+  letter-spacing: 0px;	
+  font-family: "Helvetica Narrow", sans-serif;
+/*  font-stretch: condensed;*/
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+h1 a:link {
+  text-decoration: none;
+  color: black;
+}
+
+h1 a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+h1 a:hover {
+  color: yellow;
+}
+
+h2 {
+	font-family: Times;
+	font-size: 110%;
+	font-weight: normal;
+	margin-bottom: 50px;
+	color: white;
+	text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Applies to all elements with <... class="someclass"> specified. */
+.someclass { color: red; }
+
+/* Applies to the element with <... id="someid"> specified. */
+#someid { color: green; }
+
+#grad1 {
+  height: 200px;
+  background-color: blue; /* For browsers that do not support gradients */
+  background-image: linear-gradient(blue, pink); /* Standard syntax (must be last) */
+}
+
+#bggrad {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: blue; /* For browsers that do not support gradients */
+  background-image: linear-gradient(blue, pink); /* Standard syntax (must be last) */
+}
+
+.footer {
+   font-family: Times, monospace;
+   font-size: 110%;
+   font-weight: normal;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: none;
+   color: white;
+   text-align: center;
+}
+
+/* Start http://www.cursors-4u.com */ * {cursor: url(http://cur.cursors-4u.net/smilies/smi-2/smi189.cur), auto !important;} /* End http://www.cursors-4u.com */
